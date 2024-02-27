@@ -1,0 +1,14 @@
+{
+  "name": "TrackerAccount",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["https://example.com/*"],
+  "permissions": ["declarativeNetRequest"],
+  "declarative_net_request": {
+    "rule_resources" : [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  }
+}
