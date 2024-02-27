@@ -2,8 +2,8 @@
   "name": "TrackerAccount",
   "version": "1.0",
   "manifest_version": 3,
-  "host_permissions": ["https://example.com/*"],
-  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["https://issues.skia.org/*", "https://issues.pigweed.dev/*", "https://issues.gerritcodereview.com/*", "https://git.issues.gerritcodereview.com/*", "https://issuetracker.google.com/*", "https://issues.fuchsia.dev/*", "https://issues.chromium.org/*"],
+  "permissions": ["declarativeNetRequestWithHostAccess"],
   "declarative_net_request": {
     "rule_resources" : [{
       "id": "ruleset_1",
