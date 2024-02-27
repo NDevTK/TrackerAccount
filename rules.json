@@ -5,15 +5,11 @@
     "action": {
       "type": "redirect",
       "redirect": {
-        "transform": {
-          "queryTransform": {
-            "addOrReplaceParams": [{ "key": "authuser", "value": "1" }]
-          }
-        }
+        "regexSubstitution": "https://\\1/u/1/issues/\\2"
       }
     },
     "condition": {
-      "urlFilter": "https://*",
+      "regexFilter": "^https://([A-z.]*)/issues/(.*)",
       "resourceTypes": ["main_frame"]
     }
   }
